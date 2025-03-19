@@ -1,0 +1,387 @@
+.body1{
+    background:linear-gradient(to right, sandybrown,white, green);
+    padding: 2px;
+    height: 600px;
+    width: 100%;
+}
+.body2{
+    background-image: url(./sky.png);
+    width: 99%;
+    height: 100%;
+}
+.p{
+    display: flex;
+    font-size: 35px;
+    font-weight: bold;
+    justify-content: center;
+}
+#p1{
+    color: black;
+    background-color: sandybrown;
+    margin-right: 5px;
+}
+#p2{
+    color: black;
+    background-color: white;
+    margin-right: 5px;
+}
+#p3{
+    color: black;
+    background-color: green;
+    margin-right: 5px;
+}
+.main2{
+    background-image: url(./road.jpg);
+    height: 210px;
+    width: 500%;
+    position: relative;
+    top: 225px;
+    background-repeat: repeat;
+    background-size: cover;
+    animation-name: road;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes road{
+    0%{
+        right: 0%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+.city{
+    height: 265px;  
+    background-image: url(./city.png);
+    width: 100%; 
+    position: relative;
+    position: absolute;
+    left: 0px;
+    top: 158px;
+} 
+.car{
+    height: 145px;
+    width: 345px;
+    position: relative;
+    top: 120px;
+    right: 20px;
+    margin-bottom: -50px;
+    z-index: 1;
+}   
+.cars{
+    position: relative;
+    bottom: -110px;
+}
+.flag{
+    height: 90px;
+    width: 100px;
+    position: relative;
+    top: 90px;
+    left: 100px;
+    z-index: 1;
+    margin-bottom: -250px;
+    margin-left: 510px; 
+
+}
+.wheel-1{
+    height: 60px;
+    width: 57px;
+    margin-left: 150px;
+    animation-name: wheel;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+    left: 10px;
+    top: 150px;
+    z-index: 1;
+}
+
+@keyframes wheel{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.wheel-2{
+    height: 57px;
+    width: 57px;
+    margin-left: 150px;
+    animation-name: wheel;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+    left: 285px;
+    top: 170px;
+    z-index: 1;
+}
+.sun{
+    height: 80px;
+    width: 80px;
+    position: relative;
+    left: 1050px;
+    animation-name: sun;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes sun{
+    0%{
+        right: 0%;
+    }
+    100%{
+        left: -100%;
+    }
+}
+.pgs {
+    background-color: yellow;
+    color: black;
+    justify-content: center;
+    margin-left: 500px;
+}
+
+h1{
+   padding-left: 250px;
+   font-size: 25px;
+   font-family: sans-serif;
+}
+
+.a {
+    display: flex;
+    position: relative;
+    position: absolute;
+    left: 1000px;
+    top: 650px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(143, 22, 78);
+}
+a {
+    
+    padding-left: 200px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+ol{
+    list-style-type: decimal;
+}
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+div {
+    display: inline-block;
+    unicode-bidi: isolate;
+}
+
+.card {
+    display: inline-block;
+    background-color: rgba(81, 0, 128, 0.651);
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+    margin-right: 50px;
+    margin-left: 50px; 
+    border: dotted;   
+}
+
+#T1{
+    transform: skewX(20deg);
+    animation-name: transform1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes transform1{
+    0%{
+        transform: skewX(20deg);
+    }
+    50%{
+        transform: skewX(-20deg);
+    }
+    100%{
+        transform: skewX(20deg);
+    }
+}
+
+.card1{
+
+    display: inline-block;
+    background-color: rgb(100, 179, 179);
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-right: 50px;  
+    margin-left: 40px;
+    border: double;  
+}
+
+#T2{
+    transform: skewX(30deg);
+    animation-name: transform2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes transform2{
+    0%{
+        transform: skewX(30deg);
+    }
+    50%{
+        transform: skewX(-30deg);
+    }
+    100%{
+        transform: skewX(30deg);
+    }
+}
+.card2{
+    background-color: rgb(93, 50, 89);
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-right: 50px; 
+    margin-left: 50px;   
+    border: solid;
+}
+#T3{
+    transform: rotate(90deg);
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.card3{
+
+    display: inline-block;
+    background-color: rgb(221, 111, 162);
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-right: 50px;  
+    margin-left: 50px;
+    border: 2px solid black;  
+}
+#T4{
+    background-color: rgb(26, 189, 48);
+    animation-name: scale1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border: 1px solid blue;
+}
+@keyframes scale1{
+    0%{
+        transform:scaleY(1.0);
+    }
+    50%{
+        transform: scaleY(0.5);
+    }
+    100%{
+        transform: scaleY(1.0);
+    }
+}
+.card3B{
+
+    display: inline-block;
+    background-color: rgb(219, 19, 19);
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-right: 50px;    
+    margin-left: 50px;
+    border: dotted;
+}
+
+#T5 {
+    background-color: rgb(212, 48, 130);
+    animation-name: scale2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border: 4px dotted rgb(9, 9, 56);
+}
+@keyframes scale2{
+    0%{
+        transform:scaleX(1.0);
+    }
+    50%{
+        transform: scaleX(0.5);
+    }
+    100%{
+        transform: scaleX(1.0);
+    }
+}
+.card3G{
+
+    display: inline-block;
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-right: 50px;    
+    margin-left: 50px;
+    border: inset;
+}
+
+#T6{
+    background-color: rgb(109, 165, 109);
+    animation-name: rot;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.main {
+    perspective: 1000px;
+}
+.Box {
+    position: relative;
+    background-color: rgb(218, 120, 8);
+    height: 20px;
+    width: 60px;
+    margin: 10px;
+    transition-duration: 3s;
+}
+#Box1:hover{
+    transition: linear;
+    width: 250px;
+    transition: 3s;
+}
+#Box2:hover{
+    width: 250px;
+    height: 250px;
+    transition: width 2s, height 4s;
+}
+#Box3:hover{
+    transition: linear;
+    width: 250px;
+    transition: 3s;
+}
